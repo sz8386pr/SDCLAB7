@@ -49,3 +49,5 @@ class FunctionalityTests(LiveServerTestCase):
 
         # and the new place denver too
         assert 'Denver' in self.browser.page_source
+
+    
