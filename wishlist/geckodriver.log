@@ -1,0 +1,108 @@
+1520973356745	geckodriver	INFO	geckodriver 0.20.0
+1520973356962	geckodriver	INFO	Listening on 127.0.0.1:45773
+1520973359523	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.pcifaV0LNkiT"
+1520973360652	Marionette	INFO	Enabled via --marionette
+1520973363754	Marionette	INFO	Listening on port 45781
+1520973364871	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520973366419	geckodriver::marionette	ERROR	Failed to stop browser process
+1520973377102	geckodriver	INFO	geckodriver 0.20.0
+1520973377102	geckodriver	INFO	Listening on 127.0.0.1:45808
+1520973380130	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.AKUZIiTCBJVo"
+1520973381059	Marionette	INFO	Enabled via --marionette
+1520973383567	Marionette	INFO	Listening on port 45817
+1520973383842	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520973385268	geckodriver::marionette	ERROR	Failed to stop browser process
+1520973715219	geckodriver	INFO	geckodriver 0.20.0
+1520973715235	geckodriver	INFO	Listening on 127.0.0.1:45868
+1520973718238	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.xJFOQkvSNkwY"
+1520973719152	Marionette	INFO	Enabled via --marionette
+1520973721567	Marionette	INFO	Listening on port 45880
+1520973721941	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520973726406	geckodriver::marionette	ERROR	Failed to stop browser process
+1520973726529	geckodriver	INFO	geckodriver 0.20.0
+1520973726545	geckodriver	INFO	Listening on 127.0.0.1:45916
+1520973729558	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.j0ztXVGVWfET"
+1520973730730	Marionette	INFO	Enabled via --marionette
+1520973733142	Marionette	INFO	Listening on port 45924
+1520973733455	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520973734669	geckodriver::marionette	ERROR	Failed to stop browser process
+1520973889375	geckodriver	INFO	geckodriver 0.20.0
+1520973889375	geckodriver	INFO	Listening on 127.0.0.1:45961
+1520973892434	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.iBD6WVbNkE0w"
+1520973893207	Marionette	INFO	Enabled via --marionette
+1520973895638	Marionette	INFO	Listening on port 45969
+1520973895658	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520973900097	geckodriver::marionette	ERROR	Failed to stop browser process
+1520973900222	geckodriver	INFO	geckodriver 0.20.0
+1520973900237	geckodriver	INFO	Listening on 127.0.0.1:46001
+1520973903250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.ce6hi44uqj4i"
+1520973904088	Marionette	INFO	Enabled via --marionette
+1520973906454	Marionette	INFO	Listening on port 46010
+1520973906469	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520973908065	geckodriver::marionette	ERROR	Failed to stop browser process
+1520974046434	geckodriver	INFO	geckodriver 0.20.0
+1520974046450	geckodriver	INFO	Listening on 127.0.0.1:46045
+1520974049452	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.iIqqSrqgvhaQ"
+1520974050236	Marionette	INFO	Enabled via --marionette
+1520974052734	Marionette	INFO	Listening on port 46053
+1520974053174	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520974057680	geckodriver::marionette	ERROR	Failed to stop browser process
+1520974057867	geckodriver	INFO	geckodriver 0.20.0
+1520974057883	geckodriver	INFO	Listening on 127.0.0.1:46085
+1520974060895	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.zm6XYKQ8iYHf"
+1520974061767	Marionette	INFO	Enabled via --marionette
+1520974064233	Marionette	INFO	Listening on port 46094
+1520974064607	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520974065798	geckodriver::marionette	ERROR	Failed to stop browser process
+1520974087617	geckodriver	INFO	geckodriver 0.20.0
+1520974087617	geckodriver	INFO	Listening on 127.0.0.1:46119
+1520974090639	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.OR9OHvWnvvQv"
+1520974091485	Marionette	INFO	Enabled via --marionette
+1520974093982	Marionette	INFO	Listening on port 46127
+1520974094358	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520974096189	geckodriver::marionette	ERROR	Failed to stop browser process
+1520974096298	geckodriver	INFO	geckodriver 0.20.0
+1520974096316	geckodriver	INFO	Listening on 127.0.0.1:46159
+1520974099334	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.xTvHrz8OD2Ml"
+1520974100204	Marionette	INFO	Enabled via --marionette
+1520974102907	Marionette	INFO	Listening on port 46168
+1520974103037	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520974104433	geckodriver::marionette	ERROR	Failed to stop browser process
+1520974121381	geckodriver	INFO	geckodriver 0.20.0
+1520974121397	geckodriver	INFO	Listening on 127.0.0.1:46190
+1520974124402	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.SVwNimtucwv4"
+1520974125351	Marionette	INFO	Enabled via --marionette
+1520974127848	Marionette	INFO	Listening on port 46198
+1520974128121	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520974129520	geckodriver::marionette	ERROR	Failed to stop browser process
+1520974129603	geckodriver	INFO	geckodriver 0.20.0
+1520974129609	geckodriver	INFO	Listening on 127.0.0.1:46229
+1520974132604	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\sz8386pr\\AppData\\Local\\Temp\\rust_mozprofile.BcPk4jxv1JIc"
+1520974133545	Marionette	INFO	Enabled via --marionette
+1520974136023	Marionette	INFO	Listening on port 46237
+1520974136315	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\sz8386pr\AppData\Local\openvr\openvrpaths.vrpath
+1520974137710	geckodriver::marionette	ERROR	Failed to stop browser process
