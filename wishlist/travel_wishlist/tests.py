@@ -7,6 +7,7 @@ from .models import Place
 
 class TestViewHomePageIsEmptyList(TestCase):
 
+    # tests if it displays wishlist.html template
     def test_load_home_page_shows_empty_list(self):
         response = self.client.get(reverse('place_list'))
         self.assertTemplateUsed(response, 'travel_wishlist/wishlist.html')
@@ -33,5 +34,3 @@ class TestWishList(TestCase):
         # verify if the data sent to template and data expected are the same
         self.assertCountEqual(data_rendered, data_expected)
 
-
-c
