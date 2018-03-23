@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Place
-from .forms import NewPlaceForm
+from .forms import NewPlaceForm, VisitPlaceForm
 
 # Create your views here.
 def place_list(request):
@@ -26,7 +26,7 @@ def places_visited(request):
     return render(request, 'travel_wishlist/visited.html', {'visited': visited})
 
 
-# If user presses the visited button beside the place name, set visited value to True and then save. Return to main 
+# If user presses the visited button beside the place name, set visited value to True and then save. Return to main
 def place_is_visited(request):
     if request.method == 'POST':
         pk = request.POST.get('pk')
@@ -35,3 +35,16 @@ def place_is_visited(request):
         place.save()
 
     return redirect('place_list')
+
+
+def place_detail(request, pk):
+    place = get_object_or_404(Place, pk=pk)
+    form = VisitPlaceForm(instance=place)
+    if request.method == "POST":
+        form = VisitPlaceForm(request.POST, instance=place)
+        if form.is_valid():
+            place = form.save(commit=False)
+            place.visited = True
+            place.save()
+
+    return render(request, 'travel_wishlist/place_detail.html', {'place': place, 'form': form})

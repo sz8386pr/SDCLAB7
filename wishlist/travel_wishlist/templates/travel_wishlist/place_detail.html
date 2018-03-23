@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'travel_wishlist/base.html' %}
+
+{% block content %}
+    <div class="place">
+        <div class="place_detail">
+            <h1>{{ place.name }}</h1>
+            {% if place.visited is True %}  <!-- If place is visited, display place information-->
+                <p>Visited on {{ place.date_visited }}</p>
+            <br>
+                <p>{{ place.notes|linebreaks }}</p>
+            {% else %}  <!-- if not visited, display form with the visited date and notes for the user to fill out -->
+                <form method="POST" class="visit-place-form">{% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="save btn btn-default">Save</button>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
