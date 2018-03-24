@@ -3,6 +3,14 @@
     cd wishlist
     virtualenv venv
     venv/scripts/activate
+   
+For Lab PC
+
+    cd wishlist
+    md lib
+    pip install -t lib virtualenv
+    python lib\virtualenv.py venv
+    venv/scripts/activate
 
 ### Install required modules
 Install requirments
