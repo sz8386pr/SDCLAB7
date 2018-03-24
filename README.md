@@ -1,5 +1,6 @@
 ### Setup virtual environment
 
+    cd wishlist
     virtualenv venv
     venv/scripts/activate
 
