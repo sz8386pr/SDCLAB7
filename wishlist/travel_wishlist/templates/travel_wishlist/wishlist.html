@@ -11,26 +11,15 @@
 </form>
 
 
-
+<div class='wishlist-place'>
 {% for place in places %}
 
-<div class='wishlist-place'>
-
-    <a href="{% url 'place_detail' pk=place.pk %}"><span id="place-name-{{ place.pk }}" class='visited-text'>{{ place.name }}</span></a>
-
-  <!--<form class='wishlist-place' method='POST' action='{% url 'place_is_visited' %}'>-->
-    <!--{% csrf_token %}-->
-    <!--<input type="hidden" name='pk' value='{{ place.pk }}'>-->
-    <!--<button id="mark-visited-{{ place.pk }}" type="submit">Visited!</button>-->
-<!--</form>-->
-
-
-</div>
+    <p><a href="{% url 'place_detail' pk=place.pk %}"><span id="place-name-{{ place.pk }}">{{ place.name }}</span></a></p>
 
 {% empty %}
 
 <p>You have no places in your wishlist</p>
 
 {% endfor %}
-
+</div>
 {% endblock %}

@@ -17,7 +17,9 @@
     "pk":3,
     "fields":{
       "name":"San Francisco",
-      "visited":"True"
+      "visited":"True",
+      "date_visited": "2016-01-05",
+      "notes": "SF notes"
     }
   },
 
@@ -25,7 +27,9 @@
     "pk":4,
     "fields":{
       "name":"Moab",
-      "visited":"True"
+      "visited":"True",
+      "date_visited": "2017-03-11",
+      "notes": "Moab notes"
     }
   }
 ]

@@ -7,7 +7,7 @@
 
  <ul>
    {% for place in visited %}
-     <li><a href="{% url 'place_detail' pk=place.pk %}">{{ place.name }}</a></li>
+     <li><a href="{% url 'place_detail' pk=place.pk %}"><span id="place-name-{{ place.pk }}">{{ place.name }}</span></a></li>
    {% endfor %}
 </ul>
 

@@ -26,25 +26,19 @@ def places_visited(request):
     return render(request, 'travel_wishlist/visited.html', {'visited': visited})
 
 
-# If user presses the visited button beside the place name, set visited value to True and then save. Return to main
-def place_is_visited(request):
-    if request.method == 'POST':
-        pk = request.POST.get('pk')
-        place = get_object_or_404(Place, pk=pk) # if object is valid, get the object, if not, trigger 404 error
-        place.visited = True
-        place.save()
-
-    return redirect('place_list')
-
-
+# place/place.pk is the rendered url.
+# displays VisitPlaceForm if visited is false, otherwise, render the place information
 def place_detail(request, pk):
     place = get_object_or_404(Place, pk=pk)
-    form = VisitPlaceForm(instance=place)
-    if request.method == "POST":
-        form = VisitPlaceForm(request.POST, instance=place)
-        if form.is_valid():
-            place = form.save(commit=False)
-            place.visited = True
-            place.save()
+    if not place.visited:
+        form = VisitPlaceForm(instance=place)
+        if request.method == "POST":
+            form = VisitPlaceForm(request.POST, instance=place)
+            if form.is_valid():
+                place = form.save(commit=False)
+                place.visited = True
+                place.save()
 
-    return render(request, 'travel_wishlist/place_detail.html', {'place': place, 'form': form})
+        return render(request, 'travel_wishlist/place_detail.html', {'place': place, 'form': form})
+
+    return render(request, 'travel_wishlist/place_detail.html', {'place': place})

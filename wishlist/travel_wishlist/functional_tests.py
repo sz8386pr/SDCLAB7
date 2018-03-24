@@ -27,6 +27,7 @@ class FunctionalityTests(LiveServerTestCase):
     def tearDown(self):
         self.browser.quit()
 
+    # test adding new place for the wish list
     def test_add_new_place(self):
 
         #Load home TestViewHomePage
@@ -50,4 +51,71 @@ class FunctionalityTests(LiveServerTestCase):
         # and the new place denver too
         assert 'Denver' in self.browser.page_source
 
-    
+    # test visited page works and it displays intended places
+    def test_visited(self):
+        # Load home TestViewHomePage
+        self.browser.get(self.live_server_url)
+
+        # find Places you've visted link by the footer and click to go to visited page
+        visited = self.browser.find_element_by_xpath('/html/body/a[2]')
+        visited.click()
+
+        # assert visited places from test_places are on page
+        assert 'San Francisco' in self.browser.page_source
+        assert 'Moab' in self.browser.page_source
+
+        # assert not visited places won't show up on visited page
+        assert 'Tokyo' not in self.browser.page_source
+        assert 'New York' not in self.browser.page_source
+
+    # test place detail page works
+    def test_place_detail(self):
+        # Load home TestViewHomePage
+        self.browser.get(self.live_server_url)
+
+        # find Places you've visted link by the footer and click to go to visited page
+        visited = self.browser.find_element_by_xpath('/html/body/a[2]')
+        visited.click()
+
+        # click Moab on the visited page to go to Moab's detailed page
+        moab = self.browser.find_element_by_id('place-name-4')
+        moab.click()
+
+        # assert Moab visited date and notes show up properly
+        assert 'Visited on March 11, 2017' in self.browser.page_source
+        assert 'Moab notes' in self.browser.page_source
+
+    # test changing the place to visited
+    def test_change_to_visited(self):
+        # Load home TestViewHomePage
+        self.browser.get(self.live_server_url)
+
+        # go to Tokyo place detail page
+        tokyo = self.browser.find_element_by_id('place-name-1')
+        tokyo.click()
+
+        # enter date
+        date_field = self.browser.find_element_by_css_selector('#id_date_visited')
+        date_field.clear()
+        date_field.send_keys('2015-09-25')
+
+        # emter notes
+        notes = self.browser.find_element_by_id('id_notes')
+        notes.send_keys('Tokyo notes')
+
+        # save
+        save_button = self.browser.find_element_by_css_selector('.save')
+        save_button.click()
+
+        # assert Tokyo visited date and notes show up properly
+        assert 'Visited on Sept. 25, 2015' in self.browser.page_source
+        assert 'Tokyo notes' in self.browser.page_source
+
+        # find Places you've visted link by the footer and click to go to visited page
+        visited = self.browser.find_element_by_xpath('/html/body/a[2]')
+        visited.click()
+
+        # assert places from test_places are on page including newly added Tokyo
+        assert 'Tokyo' in self.browser.page_source
+        assert 'San Francisco' in self.browser.page_source
+        assert 'Moab' in self.browser.page_source

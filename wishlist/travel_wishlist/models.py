@@ -12,4 +12,4 @@ class Place(models.Model):
         self.save()
 
     def __str__(self):
-        return '%s visited? %s' % (self.name, self.visited)
+        return '%s visited? %s date: %s notes: %s' % (self.name, self.visited, self.date_visited, self.notes)
